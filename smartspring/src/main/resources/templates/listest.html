@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<table>
+	<tr>
+		<td>No</td>
+		<td>Nama Pasien</td>
+		<td>Gender</td>
+		<td>Kategori</td>
+		<td>Biaya</td>
+		<td>Tanggal Lahir</td>
+	</tr>
+	<!--  looping -->
+	<tr th:each = "pasienModel:${pasienModelList}">
+		<td th:text="${pasienModel.KodePasien}"></td>
+		<td th:text="${pasienModel.namaPasien}"></td>
+		<td th:text="${pasienModel.genderPasien}"></td>
+		<td th:text="${pasienModel.kategoriPasien}"></td>
+		<td th:text="${pasienModel.biaya}"></td>
+		<td th:text="${pasienModel.tangggalLahir}"></td>
+	</tr>
+	<!-- End Loop -->
+	</table>
+</body>
+</html>

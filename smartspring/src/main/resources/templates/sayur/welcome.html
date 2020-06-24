@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Wadidaw Djiwa</title>
+</head>
+<body>
+	<h1>Selamat datang di welcome html folder sayur</h1>
+	<h1>Buah dari backednnya</h1>
+	<a th:text="${buah1Frontend}"></a>
+
+	<form th:action="@{/sayur/lanjut.do}" method="post">
+		Buah2Frontend <input type="text" name="buah2Frontend">
+		<button type="submit">Klik to next</button>
+	</form>
+	
+	
+</body>
+</html>

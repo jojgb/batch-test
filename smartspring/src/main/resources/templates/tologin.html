@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+		<ul>
+			<li>Username : <a th:text="${userLempar}"></a></li>
+			<li>Password : <a th:text="${passLempar}"></a></li>
+		</ul>
+		<h1>Menuju Login</h1>
+		<a th:href="@{/login}">Return to login</a>
+</body>
+</html>
